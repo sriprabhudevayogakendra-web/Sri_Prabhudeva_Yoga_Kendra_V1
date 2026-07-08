@@ -1,0 +1,857 @@
+/* =====================================
+   SRI PRABHUDEVA YOGA KENDRA
+   MAIN STYLE SHEET
+===================================== */
+
+
+/* GOOGLE VARIABLES */
+
+:root{
+
+    --primary:#5A7862;
+    --accent:#C69769;
+    --background:#FAF6F0;
+    --dark:#1E2B22;
+    --text:#4A5D50;
+    --white:#ffffff;
+
+}
+
+
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:'Plus Jakarta Sans',sans-serif;
+
+    background:var(--background);
+
+    color:var(--dark);
+
+    line-height:1.7;
+
+}
+
+
+
+/* ==============================
+        HEADER
+================================*/
+
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 6%;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.logo{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+
+
+nav a{
+
+    margin-left:20px;
+
+    text-decoration:none;
+
+    color:var(--dark);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:var(--accent);
+
+}
+
+
+
+.menu{
+
+    display:none;
+
+    font-size:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* ==============================
+        HERO
+================================*/
+
+
+.hero{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    position:relative;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.5)
+    ),
+
+    url("../images/hero.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-content{
+
+    color:white;
+
+    max-width:800px;
+
+}
+
+
+
+.hero h1{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 35px;
+
+    background:var(--accent);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    background:var(--primary);
+
+}
+
+
+
+
+
+
+/* ==============================
+        COMMON SECTION
+================================*/
+
+
+.section{
+
+    max-width:1150px;
+
+    margin:auto;
+
+    padding:70px 25px;
+
+}
+
+
+
+.section h2{
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2.5rem;
+
+    color:var(--dark);
+
+}
+
+
+
+.subtitle{
+
+    text-align:center;
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+/* ==============================
+        ACHIEVEMENTS
+================================*/
+
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.stat-card{
+
+    background:white;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.stat-card i{
+
+    font-size:2.5rem;
+
+    color:var(--accent);
+
+}
+
+
+
+.counter{
+
+    font-size:3rem;
+
+    color:var(--primary);
+
+    font-family:'Playfair Display',serif;
+
+}
+
+
+
+.counter::after{
+
+    content:"+";
+
+}
+
+
+
+
+
+
+/* ==============================
+        ABOUT
+================================*/
+
+
+.about-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:justify;
+
+    color:var(--text);
+
+}
+
+
+
+.about-content p{
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+
+
+/* ==============================
+        CARDS
+================================*/
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.07);
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card i{
+
+    font-size:2rem;
+
+    color:var(--accent);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card h3{
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+/* ==============================
+        SCHEDULE
+================================*/
+
+
+.schedule-box{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:15px;
+
+}
+
+
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+
+}
+
+
+
+tr:hover{
+
+    background:#eef5ef;
+
+}
+
+
+
+
+
+/* ==============================
+        TIMELINE
+================================*/
+
+
+.timeline{
+
+    border-left:4px solid var(--primary);
+
+    padding-left:30px;
+
+}
+
+
+
+.timeline-item{
+
+    margin-bottom:30px;
+
+}
+
+
+
+.year{
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+}
+
+
+
+
+
+
+/* ==============================
+        GALLERY
+================================*/
+
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+}
+
+
+
+.gallery-item img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+
+
+.gallery-item:hover img{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+
+
+/* ==============================
+        LIGHTBOX
+================================*/
+
+
+.lightbox{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:2000;
+
+}
+
+
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:85%;
+
+}
+
+
+
+.lightbox span{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+/* ==============================
+        DONATION
+================================*/
+
+
+.donation-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:40px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.upi-image{
+
+    width:260px;
+
+    max-width:100%;
+
+    margin:20px;
+
+}
+
+
+
+.upi{
+
+    color:var(--primary);
+
+    font-size:1.2rem;
+
+}
+
+
+
+.donation-text li{
+
+    list-style:none;
+
+    padding:8px;
+
+}
+
+
+
+
+
+/* ==============================
+        MAP
+================================*/
+
+
+.map iframe{
+
+    width:100%;
+
+    height:350px;
+
+    border:0;
+
+    border-radius:15px;
+
+}
+
+
+
+
+
+/* ==============================
+        WHATSAPP
+================================*/
+
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:32px;
+
+    z-index:1500;
+
+}
+
+
+
+
+
+
+/* ==============================
+        FOOTER
+================================*/
+
+
+footer{
+
+    background:var(--dark);
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+
+
+
+
+
+/* ==============================
+        ANIMATION
+================================*/
+
+
+.fade{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+
+
+.fade.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=============
+	Developer details
+==============*/
+.developer {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.developer strong {
+    color: #fff;
+}
+

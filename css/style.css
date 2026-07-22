@@ -855,3 +855,33 @@ footer{
     color: #fff;
 }
 
+/*======
+youtube
+=====*/
+.youtube-box {
+    text-align: center;
+    padding: 40px;
+    background: #fff8ef;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.youtube-icon {
+    font-size: 60px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+
+.youtube-box h3 {
+    font-size: 28px;
+    color: #8b4513;
+}
+
+
+.youtube-box p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
